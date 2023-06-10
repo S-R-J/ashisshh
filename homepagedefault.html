@@ -1,0 +1,209 @@
+
+<html>
+<head>
+    <title>A N Insurance</title>
+</head>
+
+<style>
+    *{
+        margin: auto;
+        padding: 5px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    }
+
+    .navigationbar
+    {
+        border: 2px black solid;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* grid-column-start: 2; */
+        /* grid-row-start: 1; */
+        /* justify-content: space-around; */
+    }
+
+    .heading
+    {
+        font-size: 30px;
+        /* border: 2px black solid; */
+    
+    }
+
+    .heading:hover
+    {
+        cursor: pointer;
+    }
+    
+    .list
+    {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* border: 2px red solid; */
+        font-size: 20px;
+        
+        
+    }
+
+    .login
+    {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 10%;
+        /* border: 2px blue solid; */
+    }
+
+    #login-btn
+    {
+        font-size: 25px;
+    }
+
+    #login-btn:hover
+        {
+            cursor:pointer;
+
+        }
+    
+
+    .photo
+    {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .products
+    {
+        display: flex;
+        border: 2px rgb(44, 117, 207) solid;
+        font-size: 30px;
+        border-radius: 10px 10px;
+    }
+
+    .life-inc:hover , .general-inc:hover
+    {
+        
+        box-shadow: 2px 2px 2px 3px #aaaaaa;
+        border-radius: 20px 20px;
+        cursor: pointer;
+        font-size: 35px;
+    }
+
+
+    .hlv
+    {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
+        border: 2px rgb(44, 117, 207) solid;
+        border-radius: 10px 10px;
+    }
+
+    .info
+    {
+        display: flex;
+        /* margin-left: 10%; */
+         /* border: 2px rgb(255, 0, 183) solid; */
+         font-size: 22px;
+    
+    }
+
+    .hlv-text
+    {
+        font-size: 30px;
+        border: 2px rgb(44, 117, 207) solid;
+        border-radius: 10px 10px;
+
+    
+    }
+
+    .hlv-text:hover
+    {
+        cursor: pointer;
+        background-color: rgb(44, 117, 207);
+        color: white;
+
+    }
+
+    .search
+    {
+        display: flex;
+        border: 2px rgb(44, 117, 207) solid;
+        font-size: 30px;
+        border-radius: 10px 10px;
+    }
+
+    #search-input
+    {
+        display: flex;
+        width: 70%;
+        height: 40px;
+        justify-self:start;
+    }
+
+</style>
+
+<body>
+
+    <div class="navigationbar">
+            <div class="heading" onclick="window.location.href = 'homepagedefault.html'">A N Insurance</div>
+            <div class="nav-items">
+                <div class="list">
+                    <div>Helpline</div>
+                    <div>About</div>
+                    <div>Contact</div>
+                </div>
+            </div>
+            <div class="login"><button id="login-btn" onclick="window.location.href='signin.html'">Login</button></div>
+    </div>
+
+    <!-- -------------------------------------------- -->
+
+
+    <div class="photo">
+        <img width="80%"
+                src="\homepage.jpg"
+                srcset="\homepage.jpg 500w, \homepage.jpg 400w" >
+    </div>
+
+
+    <!-- -------------------------------------------- -->
+
+    <div class="products">
+        <div class="life-inc" onclick="window.location.href = 'termpolicies.html'">Life Insurance</div>
+        <div class="general-inc">General Insurance</div>
+    </div>
+
+    <!-- -------------------------------------------- -->
+
+
+    <br><br><br>
+    <div class="hlv">
+       
+        <img src="/hlv.jpg" alt="" height="200px">
+        <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aspernatur qui aperiam nostrum facere facilis voluptates iure! Ad, cum iure.</div>
+        <div class="hlv-text" onclick="window.location.href = 'hlvcalculate.html'">HLV Calculator</div>
+    </div>
+
+    <!-- -------------------------------------------- -->
+
+    <br><br>
+    <div class="search">
+        <input id="search-input" type="text" placeholder="Search"><button>Search</button>
+    </div>
+
+    <!-- -------------------------------------------- -->
+
+    <div class="know-more">
+
+    </div>
+
+    <!-- -------------------------------------------- -->
+
+    <div class="copyright">
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <title>Suraj</title>
+    </head>
+
+
+    <style>
+        *{
+            margin: 10px;
+            font-size: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .navigationbar
+        {
+            /* border: 2px solid black; */
+            display: flex;
+            
+        }
+        
+        .companyname
+        {
+            /* border: 2px solid black; */
+            font-size: 40px;
+        }
+
+        .allpolicies
+        {
+            border: 2px red solid;
+            display: grid;
+        }
+
+       
+
+        #box1 , #box2 , #box3 , #box4
+        {
+            border: 2px blue solid;
+        }
+
+
+        #salary
+        {
+            /* border: 2px red solid; */
+           
+        }
+        
+        #selecter
+        {
+            display: grid;
+            /* border: 2px rgb(159, 3, 3) solid; */
+        }
+
+        #btn
+        {
+            font-size: 20px;
+            color: black;
+            background-color: rgb(255, 255, 255);
+        }
+
+        #btn:hover
+        {
+            color: rgb(255, 255, 255);
+            background-color: black;
+        }
+
+        .urpremium
+        {
+            display: flex;
+            height: 70px;
+            border: 2px black solid;
+        }
+
+        .valuee
+        {   margin-left: 70%;
+            /* border: 2px red solid; */
+        
+        }
+
+
+    </style>
+
+
+    <body>
+
+        <div class="navigationbar">
+            
+            <div class="companyname">A-N Insurance Company</div>
+            
+        </div>
+
+        <form action="" id="selecter">
+
+            <div>Choose Policy year  
+                <select name="Salary" id="salary">
+                <option value="">Choose</option>
+                <option value="male">Cover for 60 year </option>
+                <option value="male">Cover for 75 year</option>
+                <option value="male">Cover for 85 year</option>
+                <option value="male">Cover for 95 year </option>
+                <option value="male">Cover for 100 year </option>
+                </select>
+            </div>
+            <div>Choose Paying Term  
+                <select name="Salary" id="salary">
+                <option value="">Choose</option>
+                <option value="male">Monthly</option>
+                <option value="male">Quarterly</option>
+                <option value="male">Yearly</option>
+                <option value="male">One time Full Payment</option>
+        
+                </select>
+            </div>
+
+            <div class="urpremium">
+                <div>Your Premium</div>
+                <div class="valuee">20,000</div>
+            </div>
+
+        </form>
+
+        <div class="butttn"><button id="btn">Payment 👍</button></div>
+
+
+
+
+    </body>
+
+
+</html>
